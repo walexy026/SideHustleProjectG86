@@ -1,0 +1,49 @@
+nav{
+    background-color:  hsl(217, 28%, 15%);
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 1em;
+}
+nav img{
+    width: 100px;
+    padding-left: 3em;
+}
+ul{
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+    padding-right: 2em
+}
+ul li{
+    list-style: none;  
+    
+}
+li a{
+    color: #ffffff;
+    list-style: none;
+    text-decoration: none;
+}
+a:hover{
+    border-bottom: 1px solid #ffffff;
+}
+.Intro{
+    background-color: hsl(218, 28%, 13%);
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+}
+.Intro h2{
+    color: #ffffff;
+}   
+.Intro p{
+    color: aliceblue;
+} 
+.Intro button{
+    color: #ffffff;
+    background:  hsl(176, 68%, 64%);
+    padding: 1em 3em;
+    border-radius: 20px;
+    outline: hsl(176, 68%, 64%);
+
+}
