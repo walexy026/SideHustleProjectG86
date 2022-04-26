@@ -1,25 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 nav{
-    background-color:  hsl(217, 28%, 15%);
+    background-color: hsl(217, 28%, 15%);
     display: flex;
     justify-content: space-between;
     width: 100%;
     padding: 1em;
+
 }
-nav img{
-    width: 100px;
-    padding-left: 3em;
-}
+/* nav img{ */
+    /* width: 100px; */
+    /* padding: 2em; */
+/* } */
 ul{
     display: flex;
     justify-content: center;
     gap: 2em;
-    padding-right: 2em
+    padding-right: 2em;
+}
+@media screen and (max-width:400px)  {
+   ul{
+       gap: 15px;
+       font-size: 14px;
+       padding-left: 1em;
+   }
 }
 ul li{
     list-style: none;  
     
 }
 li a{
+    font-family: "Open Sans", sans-serif;
     color: #ffffff;
     list-style: none;
     text-decoration: none;
@@ -28,10 +43,40 @@ a:hover{
     border-bottom: 1px solid #ffffff;
 }
 .Intro{
-    background-color: hsl(218, 28%, 13%);
+    background-color: hsl(217, 28%, 15%);
     text-align: center;
     justify-content: center;
+    /* width: 100%; */
+    /* background-image: url(/images/bg-curvy-desktop.svg); */
+    /* background-repeat: no-repeat; */
+}
+.Intro .responsive{
     width: 100%;
+    padding:0 10vh;
+    /* padding-right: 5vw; */
+    margin: auto;
+    height: auto;
+    /* text-align: center; */
+}
+.Intro .curvy{
+    width: 100%;
+    margin: auto;
+    top: 0;
+
+}
+@media screen and (max-width:768px) {
+    .Intro .curvy{
+        display: none;
+    }
+}
+.Intro .Mcurvy{
+    display: none;
+}
+@media screen and (maxq-width:768px) {
+    .Intro .Mcurvy{
+        display: flex;
+        width: 100%;
+    }
 }
 .Intro h2{
     color: #ffffff;
@@ -45,5 +90,5 @@ a:hover{
     padding: 1em 3em;
     border-radius: 20px;
     outline: hsl(176, 68%, 64%);
-
+    cursor: pointer;
 }
